@@ -1,5 +1,5 @@
 #########
-# Figure 2a, barplot for DM count in CG context
+# Figure 2a, barplot for DM count
 #########
 library("RColorBrewer")
 colors = brewer.pal(n = 2, name = "RdBu")
@@ -7,7 +7,7 @@ colors = brewer.pal(n = 2, name = "RdBu")
 
 # data in
 # fig3a/DMP_genes_KO_vs_WT_chrAll.txt
-work_path = "/Users/mingyi/project_katja2/manuscript_Neil/supplementary/fig2a"
+work_path = "/Users/mingyi/project_katja2/manuscript_Neil/supplementary/dataIn_fig2a"
 setwd(work_path)
 Out = "out"
 dir.create(Out)
