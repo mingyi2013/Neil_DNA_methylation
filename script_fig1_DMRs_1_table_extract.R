@@ -1,8 +1,10 @@
 # original script file: extract_hmst_DMRs_table_CG.R
-# run location: SAGA /cluster/projects/nn9383k/mingyiy/hmst_katja2/
+# original run location: SAGA /cluster/projects/nn9383k/mingyiy/hmst_katja2/*/*/data/
 
-# Run: for file in KO*5mC_[Tg]*_imputedWith_zeros_DMRs_hyp*[ro].csv; do Rscript ../../extract_hmst_DMRs_table.R $file table_$file filter_$file; done
-# Alternative Run: Rscript extrast_DMRs_table.R input_file out_file_name out_filter_file_name
+# Example here: 
+# setwd("~/project_katja2/manuscript_Neil/supplementary/dataIn_fig1/data_DMRs_1_table_extract")
+  # df <- read.csv(file = "./KO1.me_vs_WT1.me_5mC_geneBody_imputedWith_zeros_DMRs_hyper.csv") # test inside Rstudio
+# run in terminal: for file in KO*5mC_[Tg]*_imputedWith_zeros_DMRs_hyp*[ro].csv; do Rscript ../../script_fig1_DMRs_1_table_extract.R  $file table_$file filter_$file; done
 
 # module load R/4.0.0-foss-2020a
 #!/bin/sh
@@ -12,7 +14,6 @@
 # set arguments, input_file= args[1], out_file= args[2], out_filter = args[3]
 args=commandArgs(trailingOnly = T)
 
-# test: df <- read.csv(file = "./KO1.chr1.cout_vs_WT1.chr1.cout_5mC_TES_imputedWith_zeros_DMRs_hypo.csv")
 df <- read.csv(file = args[1])
 
 # remove string
