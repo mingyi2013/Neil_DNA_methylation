@@ -1,4 +1,6 @@
 # Neil_DNA_methylation
+This sesion contains the code information and data analysis processs for manuscript: 
+Epigenetic landscape of 5mC and 5hmC in hippocampus of Neil1- and Neil2 deficient mice 
 
 # 1. Workflow for GWBS
 
