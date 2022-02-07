@@ -1,3 +1,8 @@
+###############
+# HMST-Seq-Analyzer data process part I: DMRs table extraction
+###############
+# extract HMST DMR table, including info chr_position, transcripts, geneName, median, p and rratio
+# filter geneList in CG by difference >= 20 
 # original script file: extract_hmst_DMRs_table_CG.R
 # original run location: SAGA /cluster/projects/nn9383k/mingyiy/hmst_katja2/*/*/data/
 
@@ -8,8 +13,6 @@
 
 # module load R/4.0.0-foss-2020a
 #!/bin/sh
-# extract HMST DMR table, including info chr_position, transcripts, geneName, median, p and rratio
-# filter geneList in CG by difference >= 20 
 
 # set arguments, input_file= args[1], out_file= args[2], out_filter = args[3]
 args=commandArgs(trailingOnly = T)
