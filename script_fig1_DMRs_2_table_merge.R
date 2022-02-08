@@ -1,27 +1,15 @@
-SAGA /cluster/projects/nn9383k/mingyiy/hmst_katja2]$ cat script_merge_table.R 
-#!/bin/sh/Rscript
-
-###############################
-# New Part II: merge tables of output in hmst, by R
-# mingyi yang,  2021_07_06, correct for CHX input file pattern in step1
-# script_merge_table.R
-# /cluster/projects/nn9383k/mingyiy/hmst_katja1_CHX/
-# sbatch under: /cluster/projects/nn9383k/mingyiy/hmst_katja2/Neil1_vs_WT_10d/
-
-# test: module load R/4.0.0-foss-2020a
-# Rscript ../script_merge_table.R
-
-# batch job: sbatch ../job_sbatch_merge_table.sm
-# skip data in chrY for CHX. skip chrY for KO2_vs_WT2 in CG
-###############################
+###############
+# HMST-Seq-Analyzer data process part II: merge tables from DMRs table extraction
+###############
 
 ###########
 # step 1. For KO_vs_WT: rbind of TSS, TES and genes in each chr:
 ###########
+# work path: under fold: dataIn_fig1/data_DMRs_2_table_merge/Neil1_vs_WT
+setwd("~/project_katja2/manuscript_Neil/supplementary/dataIn_fig1/data_DMRs_2_table_merge/Neil1_vs_WT")
+
 dir.create("out_table") 
 library(tidyverse)
-
-r_threshold = 0.1 # set value for filter rratio
 
 ### merged chr for CG:
 context = "CG"
@@ -77,7 +65,7 @@ for (i in c(1:19,"X"))
 
 ### merged chr for CHX: data in chrX chrY are empty, skip.
 # check file name pattern, it is diff between CG and CHX: in CHX: out_CHG_chr1/data/table_KO1.me_vs_WT1*.csv
-# for loop for context: until end of step1.
+# for-loop in context: until end of step1.
 for (context in c("CHG", "CHH")) {
 print(context) 
 ## KO_1_vs_WT_1
@@ -212,7 +200,7 @@ head(total_df2, n=10)
 # write and save df: 
 outFile = paste("out_table/allChr_table_group_KO_vs_WT_", context, ".txt", sep = "")
 write.table(total_df2, file = outFile, row.names = F, quote = F, sep = "\t")
-}   #For loop for context, from start in step2 to end in script.
+}   # For-loop in context, from start in step2 to end in script.
 
 print("Done_merge_table!")
 ##############################################
