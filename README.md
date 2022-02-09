@@ -29,7 +29,23 @@ This part contains the workflow for genome wide bisulfite sequence (GWBS) data a
 
 ## 1.3 Code for sequence alignment and 5mC extraction
 
-
+## 1.1 Workflow for GWBS
+**outline:**
++ Quality control by FasteQC
++ Alignment by Bismark package
++ Extraction of 5mC in CG, CHG and CHH context by Bismark
++ Identification of differential, by methylation (DM):
+    - CG in genome-wide by methyKit 
+        - Differentially methylated cytosine (DMC) in base resolution
+        - Differentially methylated region (DMR) by tiled window (1000 bp per window)
+        - Differentially methylate promoter region (DMP) between 0 and - 1000 bp of TSS. 
+    - CG, CHG and CHH in gene feature regions, by HMST-Seq-Analyzer
+        - TSS +/- 1000 bp
+        - TES +/- 1000 bp
+        - gene body (between TSS and TES)
++ data visualization and Gene Ontology (GO) enrichment analysis
+    - plot by ggplot2
+    - GO enrichment analysis by clusterProfile
 
 # 2. DM in genome-wide by methylKit tool
 ## 2.1 DMC
