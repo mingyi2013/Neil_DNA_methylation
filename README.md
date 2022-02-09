@@ -3,27 +3,27 @@
 
 This sesion contains the code information and data analysis processs for manuscript: Epigenetic landscape of 5mC and 5hmC in hippocampus of Neil1- and Neil2 deficient mice
 
-1. Workflow for GWBS
+# 1. Workflow for GWBS
 
 This part contains the workflow for genome wide bisulfite sequence (GWBS) data analysis, codes for raw data quality control, sequence alignment and mC extraction with Bismark package.
 
-# 1. Workflow for GWBS
-This part contains the workflow for genome wide bisulfite sequence (GWBS) data analysis, including:
-
-qutoe by >:
-> this is a quote #
-> Ref: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#headings
-
-quoting code by backticks, or by `command` + `E`
-
-`shortcut for inserting a code line: uisng command + E`
-
-Some basic Git commands are:
-```
-git status
-git add
-git commit
-```
+## 1.1 Workflow for GWBS
+**outline:**
++ Quality control by FasteQC
++ Alignment by Bismark package
++ Extraction of 5mC in CG, CHG and CHH context by Bismark
++ Identification of differential, by methylation (DM):
+    - CG in genome-wide by methyKit 
+        - Differentially methylated cytosine (DMC) in base resolution
+        - Differentially methylated region (DMR) by tiled window (1000 bp per window)
+        - Differentially methylate promoter region (DMP) between 0 and - 1000 bp of TSS. 
+    - CG, CHG and CHH in gene feature regions, by HMST-Seq-Analyzer
+        - TSS +/- 1000 bp
+        - TES +/- 1000 bp
+        - gene body (between TSS and TES)
++ data visualization and Gene Ontology (GO) enrichment analysis
+    - plot by ggplot2
+    - GO enrichment analysis by clusterProfile
 
 # 2. DM in genome-wide by methylKit tool
 ## 2.1 DMC
