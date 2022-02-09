@@ -8,7 +8,7 @@ This sesion contains the code information and data analysis processs for manuscr
 This part contains the workflow for genome wide bisulfite sequence (GWBS) data analysis, codes for raw data quality control, sequence alignment and mC extraction with Bismark package.
 
 ## 1.1 Workflow for GWBS
-**outline:**
+**Outline:**
 + Quality control by FasteQC
 + Alignment by Bismark package
 + Extraction of 5mC in CG, CHG and CHH context by Bismark
@@ -41,7 +41,10 @@ bismark -p 4 -o ./out_align --gzip --genome /cluster/projects/nn9383k/mingyiy/bi
 -1 *_1.fq.gz -2 *_2.fq.gz
 
 ```
-# 2. DM in genome-wide by methylKit tool
+
+
+# 2. DM in genome-wide CG by methylKit tool
+
 ## 2.1 DMC
 ## 2.2 DMR
 ## 2.3 DMP
