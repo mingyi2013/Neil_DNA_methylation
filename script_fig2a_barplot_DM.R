@@ -4,9 +4,7 @@
 library("RColorBrewer")
 colors = brewer.pal(n = 2, name = "RdBu")
 
-
-# data in
-# fig3a/DMP_genes_KO_vs_WT_chrAll.txt
+# data in: fig3a/DMP_genes_KO_vs_WT_chrAll.txt
 work_path = "/Users/mingyi/project_katja2/manuscript_Neil/supplementary/dataIn_fig2a"
 setwd(work_path)
 Out = "out"
