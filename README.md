@@ -26,10 +26,53 @@ This part contains the workflow for genome wide bisulfite sequence (GWBS) data a
     - GO enrichment analysis by clusterProfile
 
 ## 1.2 Code for quanlity control
-
+```console
+#!/usr/bin/sh
+mkdir ./out_fastqc
+fastqc -o ./out_fastqc *_1.fq.gz
+fastqc -o ./out_fastqc *_2.fq.gz
+```
 ## 1.3 Code for sequence alignment and 5mC extraction
+Step 1. Sequence alignment
+```console
+#!/usr/bin/sh
+mkdir ./out_align
+bismark -p 4 -o ./out_align --gzip --genome /cluster/projects/nn9383k/mingyiy/bismark_saga/genomes/mouse/GRCm38_ncbi/ \
+-1 *_1.fq.gz -2 *_2.fq.gz
+```
 
+Step 2. Deduplication
+```console
+#!/usr/bin/sh
+deduplicate_bismark -p --bam ./out_align/*_1_bismark_bt2_pe.bam
 
+mkdir out_deduplicate 
+mv *deduplicated.bam ./out_deduplicate
+mv *deduplication_report.txt ./out_deduplicate
+```
+
+Step 3. Extraction of 5mC
+```console
+#!/usr/bin/sh
+bismark_methylation_extractor \
+-o out_mExtractor_non_CpG --multicore 3 -p \
+--ignore_r2 2 --comprehensive --cytosine_report \
+--bedGraph --CX_context --ample_memory \
+--split_by_chromosome --gzip \
+--genome /cluster/projects/nn9383k/mingyiy/bismark_saga/genomes/mouse/GRCm38_ncbi/ \
+./out_deduplicate/*1_bismark_bt2_pe.deduplicated.bam
+```
+
+Step 4. Generate report
+```console
+#!/usr/bin/sh
+mkdir ./out_report
+bismark2report --dir ./out_report /
+--alignment_report ./out_align/*report.txt /
+--dedup_report ./out_deduplicate/*report.txt /
+--splitting_report ./out_mExtractor_non_CpG/*_splitting_report.txt /
+--mbias_report ./out_mExtractor_non_CpG/*.M-bias.txt
+```
 
 # 2. DM in genome-wide by methylKit tool
 ## 2.1 DMC
