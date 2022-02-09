@@ -39,7 +39,6 @@ Step 1. Sequence alignment
 mkdir ./out_align
 bismark -p 4 -o ./out_align --gzip --genome /cluster/projects/nn9383k/mingyiy/bismark_saga/genomes/mouse/GRCm38_ncbi/ \
 -1 *_1.fq.gz -2 *_2.fq.gz
-```
 
 Step 2. Deduplication
 ```console
