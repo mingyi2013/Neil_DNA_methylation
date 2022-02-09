@@ -25,9 +25,9 @@ This part contains the workflow for genome wide bisulfite sequence (GWBS) data a
     - plot by ggplot2
     - GO enrichment analysis by clusterProfile
 
-## 1.2 Code in QC
+## 1.2 Code for quanlity control
 
-## 1.3 Code in sequence alignment and 5mC extraction
+## 1.3 Code for sequence alignment and 5mC extraction
 
 
 
