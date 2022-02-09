@@ -42,7 +42,9 @@ bismark -p 4 -o ./out_align --gzip --genome /cluster/projects/nn9383k/mingyiy/bi
 
 ```
 
+
 # 2. DM in genome-wide CG by methylKit tool
+
 ## 2.1 DMC
 ## 2.2 DMR
 ## 2.3 DMP
