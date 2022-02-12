@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 This is a new file.
 add bra bra bra.
+=======
+a new abc file in feature branch.
+>>>>>>> feature
