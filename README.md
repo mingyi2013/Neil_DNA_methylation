@@ -64,7 +64,7 @@ bismark2report --dir ./out_report --alignment_report ./out_align/*report.txt \
 ```
 
 # 2. DM in genome-wide CG by methylKit tool
-## 2.1 DMC
+## 2.1 DM cytosine (DMC)
 ## 2.2 DMR
 ## 2.3 DMP
 
