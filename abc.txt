@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+This is a interesting file
 This is a new file.
 add bra bra bra.
 =======
