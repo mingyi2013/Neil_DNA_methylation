@@ -1,3 +1,0 @@
-This is the second file abc2.
-add a star * in the end.
-ad two star ** in the end.
