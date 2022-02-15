@@ -66,17 +66,26 @@ bismark2report --dir ./out_report --alignment_report ./out_align/*report.txt \
 # 2. DM in genome-wide CG by methylKit tool
 ## 2.1 Differentially methylated cytosine (DMC)
 ```console
-Rscript script_fig1_methylkit_annotation_DMC
+Rscript script_fig1_methylkit_DMC.R
 ```
 ## 2.2 Differentially methylated region (DMR)
 ```console
-Rscript script_fig1_methylkit_annotation_DMR
+Rscript script_fig1_methylkit_DMR.R
 ```
-## 2.3 Differentially methylated promoter (DMP)
-```console
-Rscript script_fig1_methylkit_annotation_DMP
-```
+## 2.3 Differential methylation gene annotation
 
+- Differentially methylated cytosine (DMC)
+```console
+Rscript script_fig1_methylkit_annotation_DMC.R
+```
+- Differentially methylated region (DMR)
+```console
+Rscript script_fig1_methylkit_annotation_DMR.R
+```
+- Differentially methylated promoter (DMP)
+```console
+Rscript script_fig1_methylkit_annotation_DMP.R
+```
 
 # 3. DM in gene feature region by HMST-Seq Analyzer
 ## 3.1 DMRs in CG
