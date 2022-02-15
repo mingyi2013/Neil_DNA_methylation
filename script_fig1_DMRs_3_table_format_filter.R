@@ -23,7 +23,7 @@ dir.create(out)
 
 # input data
 #context = "CHG" #test 
-# for_loop from beginning to end
+# for_loop for context CG, CHG and CHH:
 for (context in c("CG", "CHG", "CHH")) {print(context)
 
 File = paste("out_table/allChr_table_group_KO_vs_WT_", context,".txt", sep = "")
@@ -198,7 +198,7 @@ print(p)
 dev.off()
 print("Done step 4. plot count DMRs genes")
 
-}  # end of for_loop in context from modified step2 "input data..."
+}  # end of for_loop in context CG, CHG and CHH.
 
 
 # sum total count for CG, CHG and CHH
