@@ -1,6 +1,6 @@
-SAGA /cluster/projects/nn9383k/mingyiy/hmst_katja2/hmst_Neil1_vs_WT_6M]$cat script2b_CHG_hmst_m_v4.sh 
-
-# run script: ./script2a_CG_hmst_m_v4.sh chr1
+# run location:
+# SAGA /cluster/projects/nn9383k/mingyiy/hmst_katja2/hmst_Neil1_vs_WT_6M 
+# run original script: script2b_CHG_hmst_m_v4.sh
 
 #---------------------
 #!/bin/bash
