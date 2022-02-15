@@ -163,12 +163,19 @@ df1 = df_total
 df1[df1$feature == "gene", "feature"] <- "gene_Body"
 print(df1)
 
-# set ylim parameter: if max(count) <20, ylim=20
-if (max(df1$count) <= 20) 
-{Ylim = 20
+
+# set new ylim, 2021_11_05 for manuscript
+if (context == "CG") {y = 300
+  print(paste("set ylim for CG at ", y, sep = ""))
+} else if (context == "CHG") { y = 2000
+  print(paste("set ylim for CHG at ", y, sep = ""))
+} else {
+  y = 4000
+  print(paste("set ylim for CHH at ", y, sep = ""))
+}
+
+Ylim = y
 print(Ylim)
-}else {Ylim = as.integer(max(df1$count) *1.2/10 +1)*10
-print(Ylim)}  
 
 p <- ggplot(data=df1, aes(x=feature, y=count, fill=type)) +
   geom_bar(stat="identity", color="black",position=position_dodge())+
@@ -176,7 +183,7 @@ p <- ggplot(data=df1, aes(x=feature, y=count, fill=type)) +
             position = position_dodge(0.9), size=6)+
   scale_fill_manual(values=c('#E69F00', '#999999'))+
   theme_minimal(base_size = 18) +
-  labs(x = "Features", y = "DMRs gene count") +
+  labs(y = "DMRs gene count") +
   ggtitle(context) +
   ylim(0, Ylim) 
 
@@ -190,7 +197,8 @@ jpeg(file = outF6,
 print(p)
 dev.off()
 print("Done step 4. plot count DMRs genes")
-}  # end of for_loop in context from step1
+
+}  # end of for_loop in context from modified step2 "input data..."
 
 
 # sum total count for CG, CHG and CHH
@@ -207,5 +215,5 @@ df_sum <- rbind(df_sum, df_sum_total)
 outFile = paste(out, "/sum_gene_count_total.txt", sep = "")
 write.table(df_sum, file = outFile, row.names = F, quote = F, sep = "\t")
 
-print("End!")
-# --------------
+print("Done DMR table_format, filter, gene count and plot !")
+# -------
