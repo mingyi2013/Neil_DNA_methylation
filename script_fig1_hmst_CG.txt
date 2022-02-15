@@ -1,10 +1,10 @@
-
-SAGA /cluster/projects/nn9383k/mingyiy/hmst_katja2/hmst_Neil1_vs_WT_6M]$ cat script2a_CG_hmst_m_v4.sh 
+# run location:
+# SAGA /cluster/projects/nn9383k/mingyiy/hmst_katja2/hmst_Neil1_vs_WT_6M 
 #-----------------------
 #!/bin/bash
 # HMST GWBS_mouse v4b
 
-# update 2020_12_28
+# original name:script2a_CG_hmst_m_v4.sh, update 2020_12_28
 # New setting: hmst_seq_analyzer find_MRs -W yes (try to use equal bin to remove low density mC region) -a 200.
 
 
