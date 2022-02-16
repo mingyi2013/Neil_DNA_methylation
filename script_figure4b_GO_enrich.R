@@ -2,7 +2,7 @@
 # script figure 4b: GO over-representation analysis for common genes among Neil1_vs_WT, Neil2_vs_WT and DK_vs_WT
 #######
 
-setwd("~/project_katja2/manuscript_Neil/supplementary/")
+#setwd("~/project_katja2/manuscript_Neil/supplementary/")
 library(clusterProfiler)
 library(enrichplot)
 library(tidyverse)

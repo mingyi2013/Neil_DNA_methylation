@@ -2,7 +2,7 @@
 # script figure 4a: venn diagarm
 ######
 
-setwd("~/project_katja2/manuscript_Neil/supplementary/")
+#setwd("~/project_katja2/manuscript_Neil/supplementary/")
 library(VennDiagram)
 library(RColorBrewer)
 library(tidyverse)
