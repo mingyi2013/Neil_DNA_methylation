@@ -107,8 +107,8 @@ out data for next step: geneList_DMRs_*
 
 # 4. GO enrichment in DM associated genes
 ## 4.1 Extract common DM genes among Nei1,2 and double knockouts
-input data: dataOut_fig3/geneList_DMRs_*
-out data: commonGenes_C*.txt
+input data: dataOut_fig3/geneList_DMRs_*  
+out data: commonGenes_C*.txt  
 out plot: venn diagram (figure 4A)
 
 ```console
@@ -118,9 +118,10 @@ Rscript script_fig4a_venn.R
 ## 4.2 GO enrichment
 -  GO enrichment in CG
 -  GO enrichment in CHG
--  GO enrichment in CHH
-input data: dataIn_fig4/commonGenes_C*.txt (generated from step 4.1)
-out plot: Figure 4B-E in out fold: GO_commonGenes_C* 
+-  GO enrichment in CHH  
+
+input data: dataIn_fig4/commonGenes_C*.txt (generated from step 4.1)  
+out plot: Figure 4B-E in fold: GO_commonGenes_C* 
 
 ```console
 Rscript script_fig4b_GO_enrich.R
