@@ -96,18 +96,35 @@ bash script_fig1_hmst_CHH.sh
 ```
 - Extract, merge process data by R packages
 ```console
-script_fig1_DMRs_1_table_extract.R 
-script_fig1_DMRs_2_table_merge.R 
+Rscript script_fig1_DMRs_1_table_extract.R 
+Rscript script_fig1_DMRs_2_table_merge.R 
 ```
 - DMRs gene count and plot (figure 3)
 ```console
-script_fig1_DMRs_3_table_format_filter.R
+Rscript script_fig1_DMRs_3_table_format_filter.R
 ```
+out data for next step: geneList_DMRs_*
 
 # 4. GO enrichment in DM associated genes
-## 4.1 GO enrichment in CG
-## 4.1 GO enrichment in CHG
-## 4.1 GO enrichment in CHH
+## 4.1 Extract common DM genes among Nei1,2 and double knockouts
+input data: dataOut_fig3/geneList_DMRs_*
+out data: commonGenes_C*.txt
+out plot: venn diagram (figure 4A)
+
+```console
+Rscript script_fig4a_venn.R
+```
+
+## 4.2 GO enrichment
+-  GO enrichment in CG
+-  GO enrichment in CHG
+-  GO enrichment in CHH
+input data: dataIn_fig4/commonGenes_C*.txt (generated from step 4.1)
+out plot: Figure 4B-E in out fold: GO_commonGenes_C* 
+
+```console
+Rscript script_fig4b_GO_enrich.R
+```
 
 # 5. Workflow for HMST-sequencing
 
