@@ -12,7 +12,7 @@ Outline (**Figure 1**):
 + Quality control by FasteQC
 + Alignment by Bismark package
 + Extraction of 5mC in CG, CHG and CHH context by Bismark
-+ Identification of differential, by methylation (DM):
++ Identification of Differential Methylation (**DM**):
     - CG in genome-wide by methyKit 
         - Differentially methylated cytosine (DMC) in base resolution
         - Differentially methylated region (DMR) by tiled window (1000 bp per window)
