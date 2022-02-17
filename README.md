@@ -8,7 +8,7 @@ This sesion contains the code information and data analysis processs for manuscr
 This part contains the workflow for genome wide bisulfite sequence (GWBS) data analysis, codes for raw data quality control, sequence alignment and mC extraction with Bismark package.
 
 ## 1.1 Workflow for GWBS
-**Outline:**
+Outline (**Figure 1**):
 + Quality control by FasteQC
 + Alignment by Bismark package
 + Extraction of 5mC in CG, CHG and CHH context by Bismark
@@ -56,7 +56,7 @@ Step 4. Extraction of 5mC in CG, CHG and CHH
 bismark_methylation_extractor -o out_mExtractor_non_CpG --multicore 3 -p --ignore_r2 2 --comprehensive --cytosine_report --bedGraph --CX_context --ample_memory --split_by_chromosome --gzip --genome /cluster/projects/nn9383k/mingyiy/bismark_saga/genomes/mouse/GRCm38_ncbi/ ./out_deduplicate/*1_bismark_bt2_pe.deduplicated.bam
 ```
 
-Step 5. Bismark report
+Step 5. Bismark report (**Table 1**)
 ```console
 bismark2report --dir ./out_report --alignment_report ./out_align/*report.txt \
 --dedup_report ./out_deduplicate/*report.txt --splitting_report ./out_mExtractor_non_CpG/*_splitting_report.txt \
@@ -64,6 +64,7 @@ bismark2report --dir ./out_report --alignment_report ./out_align/*report.txt \
 ```
 
 # 2. DM in genome-wide CG by methylKit tool
+(**Figure 2A-B**)
 ## 2.1 Differentially methylated cytosine (DMC)
 ```console
 Rscript script_fig1_methylkit_DMC.R
@@ -99,7 +100,7 @@ bash script_fig1_hmst_CHH.sh
 Rscript script_fig1_DMRs_1_table_extract.R 
 Rscript script_fig1_DMRs_2_table_merge.R 
 ```
-- DMRs gene count and plot (figure 3)
+- DMRs gene count and plot (**Figure 3**)
 ```console
 Rscript script_fig1_DMRs_3_table_format_filter.R
 ```
@@ -109,23 +110,51 @@ out data for next step: geneList_DMRs_*
 ## 4.1 Extract common DM genes among Nei1,2 and double knockouts
 input data: dataOut_fig3/geneList_DMRs_*  
 out data: commonGenes_C*.txt  
-out plot: venn diagram (figure 4A)
+out plot: venn diagram (**figure 4A**)
 
 ```console
 Rscript script_fig4a_venn.R
 ```
 
-## 4.2 GO enrichment
+## 4.2 GO enrichment for GWBS data
 -  GO enrichment in CG
 -  GO enrichment in CHG
 -  GO enrichment in CHH  
 
 input data: dataIn_fig4/commonGenes_C*.txt (generated from step 4.1)  
-out plot: Figure 4B-E in fold: GO_commonGenes_C* 
+out plot: **Figure 4B-E** in fold: GO_commonGenes_C* 
 
 ```console
 Rscript script_fig4b_GO_enrich.R
 ```
 
-# 5. Workflow for HMST-sequencing
+# 5. HMST-sequencing data analysis
+## 5.1 Data processing by HMST-Seq-Analyzer
+Extraction and gene annotation of DMRs in 5mC and 5hmC (**Figure 5E-H**)
+```console
+bash script_fig5_hmst_1_DMR.sh
+```
+
+## 5.2 Down-stream analysis by R package
+- Extract DMRs table
+```console
+Rscript script_fig5_hmst_1b_DMRs_table_extract.R  <file_in> <table_out> <filtered_talbe_out>
+```
+- Methylation profile and boxplot of 5mC and 5hmC (**Figure 5A-D**)  
+input data for 5mC:  
+        dataIn_fig5/out_chrAll/plots/plotData/plotData_TSSgeneTES_smoothed_5mC_allMRs.csv  
+input data for 5hmC:  
+    dataIn_fig5/out_chrAll/plots/plotData/plotData_TSSgeneTES_smoothed_5hmC_allMRs.csv
+```console
+Rscript script_fig5_hmst_2_plot_mC_profile.R
+Rscript script_fig5_hmst_3_plot_5hmC_profile.R
+```
+- venn diagram plot for overlap DMRs between groups (**Figure 6A**)
+
+- venn diagram plot for common DMRs genes in 5mC_hypo and 5hmC_hyper (**Figure 6B**)
+
+- GO enrichment (**Figure 6D-F**)
+
+- Boxplot of 5mC/5hmC ratio (**Figure 6G**)
+
 
