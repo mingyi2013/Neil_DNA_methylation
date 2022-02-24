@@ -1,0 +1,12 @@
+
+	Welch Two Sample t-test
+
+data:  DK$ratio and WT$ratio
+t = -20.407, df = 181.31, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.8074405 -0.6650649
+sample estimates:
+mean of x mean of y 
+ 1.228377  1.964629 
+

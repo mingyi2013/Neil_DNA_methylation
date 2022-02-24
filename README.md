@@ -149,12 +149,52 @@ input data for 5hmC:
 Rscript script_fig5_hmst_2_plot_mC_profile.R
 Rscript script_fig5_hmst_3_plot_5hmC_profile.R
 ```
-- venn diagram plot for overlap DMRs between groups (**Figure 6A**)
+- venn diagram plot for overlap DMRs between groups (**Figure 6A**) and common DMRs genes in 5mC_hypo and 5hmC_hyper (**Figure 6B**)  
+input data for Figure 6: dataIn_fig6/
+```console
+Rscript script_fig6_hmst_1_overlap_5mC_hypo_5hmC_hyper.R
+```
 
-- venn diagram plot for common DMRs genes in 5mC_hypo and 5hmC_hyper (**Figure 6B**)
-
-- GO enrichment (**Figure 6D-F**)
+- GO enrichment (**Figure 6C-F**)
+```console
+Rscript script_fig6_hmst_2_seq_overlap_overpresent.R
+```
 
 - Boxplot of 5mC/5hmC ratio (**Figure 6G**)
+```console
+Rscript script_fig6_hmst_4_ratio_5mC_5hmC_sum_plot.R
+```
 
+# 6. RNA-seq analysis
+## 6.1 QC and Sequence alignment
+
+## 6.2 sam file sorting and bam file indexing
+
+## 6.3 Assemble, merge and count transcripts by stringTie
+
+## 6.4 DEGs identification by DEseq2
+
+```console
+Rscript 
+```
+## 6.5 GO enrichment by clusterProfile
+
+```console
+Rscript 
+```
+# 7. Correlation between differential methylaiton (DM) and differential expression (DE)
+- Overlap genes sorted by catalog
+
+```console
+Rscript 
+```
+- Overlap genes sorted by features
+```console
+Rscript 
+```
+
+- venn diagarm for overlap genes
+```console
+Rscript 
+```
 
