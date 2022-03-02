@@ -1,0 +1,10 @@
+     124 DE_groups/DK_vs_WT/DE_geneList_condition_DK_vs_WT.txt
+      66 DE_groups/DK_vs_WT/DE_geneList_down_condition_DK_vs_WT.txt
+      58 DE_groups/DK_vs_WT/DE_geneList_up_condition_DK_vs_WT.txt
+     242 DE_groups/Neil1_vs_WT/DE_geneList_condition_Neil1_vs_WT.txt
+     142 DE_groups/Neil1_vs_WT/DE_geneList_down_condition_Neil1_vs_WT.txt
+     100 DE_groups/Neil1_vs_WT/DE_geneList_up_condition_Neil1_vs_WT.txt
+     134 DE_groups/Neil2_vs_WT/DE_geneList_condition_Neil2_vs_WT.txt
+      67 DE_groups/Neil2_vs_WT/DE_geneList_down_condition_Neil2_vs_WT.txt
+      67 DE_groups/Neil2_vs_WT/DE_geneList_up_condition_Neil2_vs_WT.txt
+    1000 total
