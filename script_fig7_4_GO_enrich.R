@@ -2,7 +2,7 @@
 # GO enrichment analysis: over_representation
 # update_2022_03_3
 #####################
-setwd("~/project_katja2_RNAseq/")
+#setwd("~/project_katja2_RNAseq/")
 
 library(clusterProfiler)
 library(enrichplot)
@@ -27,8 +27,8 @@ for (i in 1:length(Contrast)) { print(i)
   dir.create(out)
   
 # input data
-  #read.delim("~/project_katja2_RNAseq/DE_groups/iPS_Pts_vs_iPS_Ctr/DE_data_sigDiff_condition_iPS_Pts_vs_iPS_Ctr.txt")
-  Dir <- file.path("~/project_katja2_RNAseq/DE_groups/", Contrast[i])
+  #Dir <- file.path("~/project_katja2_RNAseq/DE_groups/", Contrast[i])
+  Dir <- file.path("dataIn_fig7/DE_groups/", Contrast[i])
   File = paste(Dir, "/DE_data_sigDiff_condition_", Contrast[i], ".txt", sep = "")
   df = read.delim(File)
   data <- df
