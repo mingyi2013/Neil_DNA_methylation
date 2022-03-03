@@ -12,7 +12,7 @@ library(apeglm) # Approximate posterior estimation for GLM coefficients
 library(pheatmap)
 library(dendextend)
 
-setwd("~/project_katja2_RNAseq/")
+#setwd("~/project_katja2_RNAseq/")
 out= "DE_count" # read count for each transcript or gene, before and after normalization by DESeq.
 dir.create(out)
 
@@ -22,8 +22,9 @@ p.threshold <- 0.05
 ##########
 # 1. import data from stringTie
 ##########
-#df <- read.delim("~/project_katja2_RNAseq/ballgown/WT_1/t_data.ctab") # test
-dir <- "~/project_katja2_RNAseq/ballgown"
+# df <- read.delim("~/project_katja2_RNAseq/ballgown/WT_1/t_data.ctab") # test
+#dir <- "~/project_katja2_RNAseq/ballgown"
+dir <- "./dataIn_fig7/ballgown"
 list.files(dir)
 
 ## create a vector of multiple files (path and name)
