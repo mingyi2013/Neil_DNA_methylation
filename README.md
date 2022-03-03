@@ -289,7 +289,7 @@ Rscript script_fig7_2_barplot_DEGs.R
 ```
 
 - venn diagarm of overlap DE genes among group comparisons (**Figure 7C**)  
-Data input: dataIn_fig7/DE_groups/*/DE_geneList_*.txt
+Data input: dataIn_fig7/DE_groups/\*/DE_geneList_*.txt
 
 ```console
 Rscript script_fig7_3_venn.R
@@ -297,7 +297,7 @@ Rscript script_fig7_3_venn.R
 
 ## 6.5 GO enrichment by clusterProfile
 - GO enrichment in DEGs in Neil1 vs WT (**Figure 7D**)  
-Data input: dataIn_fig7/DE_groups/*/DE_data_sigDiff_condition*.txt
+Data input: dataIn_fig7/DE_groups/\*/DE_data_sigDiff_condition*.txt
 ```console
 Rscript script_fig7_4_GO_enrich.R
 ```
