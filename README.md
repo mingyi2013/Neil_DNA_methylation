@@ -296,7 +296,7 @@ Rscript script_fig7_3_venn.R
 ```
 
 ## 6.5 GO enrichment by clusterProfile
-
+- GO enrichment in differential expression genes in Neil1 vs WT (**Figure 7D**)
 ```console
 Rscript 
 ```
