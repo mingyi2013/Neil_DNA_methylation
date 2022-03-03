@@ -296,9 +296,10 @@ Rscript script_fig7_3_venn.R
 ```
 
 ## 6.5 GO enrichment by clusterProfile
-- GO enrichment in differential expression genes in Neil1 vs WT (**Figure 7D**)
+- GO enrichment in DEGs in Neil1 vs WT (**Figure 7D**)
+Data input: dataIn_fig7/DE_groups/*/DE_data_sigDiff_condition*.txt
 ```console
-Rscript 
+Rscript script_fig7_4_GO_enrich.R
 ```
 # 7. Correlation between differential methylaiton (DM) and differential expression (DE)
 - Overlap genes sorted by catalog
