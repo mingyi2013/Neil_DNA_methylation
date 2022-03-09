@@ -310,16 +310,16 @@ Rscript script_fig7_5_venn_DE_DM_6_all_category_feature.R
 ```
 
 - venn diagarm for overlap genes (**Figure 7F**)   
-Data input:
+Data input: dataIn_fig7/out/data/
 
 ```console
-Rscript script_fig7_6_venn_DE_DM_CCGG_mC.R
-Rscript script_fig7_7_venn_DE_DM_CCGG_hmC.R
+Rscript script_fig7_6_venn_DE_DM_3_CCGG_mC.R
+Rscript script_fig7_7_venn_DE_DM_4_CCGG_hmC.R
 ```
 - venn diagarm for overlap genes in 5mC_hypo/5hmC_hyper pattern (**Figure 7G**)   
-Data input:
+Data input: dataIn_fig7/out/data/
 
 ```console
-Rscript script_fig7_8_venn_DE_DM_CCGG_mC_hmC.R
+Rscript script_fig7_8_venn_DE_DM_5_CCGG_mC_hmC.R
 ```
 (End)
