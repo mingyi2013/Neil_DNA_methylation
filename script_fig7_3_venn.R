@@ -6,7 +6,7 @@ library(RColorBrewer)
 library(tidyverse)
  
 # setwd
-setwd("/Users/mingyi/project_katja2_RNAseq")
+#setwd("/Users/mingyi/project_katja2_RNAseq")
 out = "venn_DE"
 dir.create(out)
 
