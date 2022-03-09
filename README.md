@@ -281,7 +281,7 @@ Data input: the count table file of "t_data.ctab" in fold ballgown/*/, generated
 Rscript script_fig7_1_DESeq.R
 ```
 
-- barplot of DE gene cout (**Figure 7B**)
+- barplot of DE gene cout (**Figure 7B**)  
 Data input: dataIn_fig7/sum_transcript_diffExp.txt  
 
 ```console
@@ -302,18 +302,24 @@ Data input: dataIn_fig7/DE_groups/\*/DE_data_sigDiff_condition*.txt
 Rscript script_fig7_4_GO_enrich.R
 ```
 # 7. Correlation between differential methylaiton (DM) and differential expression (DE)
-- Overlap genes sorted by catalog
+- barplot of overlap genes sorted by category and feature (**Figure 7E**)  
+Data input: dataIn_fig7/venn_DE_DM[CRP]\*/commonGenes_matrix_*
 
 ```console
-Rscript 
-```
-- Overlap genes sorted by features
-```console
-Rscript 
+Rscript script_fig7_5_venn_DE_DM_6_all_category_feature.R
 ```
 
-- venn diagarm for overlap genes
-```console
-Rscript 
-```
+- venn diagarm for overlap genes (**Figure 7F**)   
+Data input:
 
+```console
+Rscript script_fig7_6_venn_DE_DM_CCGG_mC.R
+Rscript script_fig7_7_venn_DE_DM_CCGG_hmC.R
+```
+- venn diagarm for overlap genes in 5mC_hypo/5hmC_hyper pattern (**Figure 7G**)   
+Data input:
+
+```console
+Rscript script_fig7_8_venn_DE_DM_CCGG_mC_hmC.R
+```
+(End)
