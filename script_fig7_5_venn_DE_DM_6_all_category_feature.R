@@ -1,15 +1,13 @@
 ###
 # overlap DE genes and DM, total
-# ggplot and extract count table by catalog, correlation, feature, mC_type, DE_type.
+# ggplot and extract count table by catalog (category), correlation, feature, mC_type, DE_type.
 ###
-###
-# overlap DE genes among comparisions
-###
+
 library(tidyverse)
 
 #setwd
-setwd("/Users/mingyi/project_katja2_RNAseq")
-out = "venn_DE_DM_all_test"
+#setwd("/Users/mingyi/project_katja2_RNAseq")
+out = "venn_DE_DM_all_barplot"
 dir.create(out)
 
 for (group in c("Neil1", "Neil2", "DK")) {print(group)
@@ -121,5 +119,5 @@ print(g)
 dev.off()
 
 }  # end of for_loop in group.
-
-
+print("End !")
+# -------------
