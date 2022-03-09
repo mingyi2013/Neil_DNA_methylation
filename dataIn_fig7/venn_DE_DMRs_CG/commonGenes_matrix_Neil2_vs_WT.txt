@@ -1,0 +1,7 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+Ang	negative	down	hyper	DMRs_CG	gene	-2.33553451877625	0.24	14:51092076:51101009	0
+Cd6	negative	down	hyper	DMRs_CG	TES	-6.29368345457385	0.1975	19:10788338:10790338	0
+Cux2	negative	down	hyper	DMRs_CG	TSS	-3.21317775121064	0.185	5:122046825:122048825	0
+Cysltr2	negative	down	hyper	DMRs_CG	TSS	-6.97243327832972	0.225	14:73048114:73050114	0
+Neil2	negative	down	hyper	DMRs_CG	TSS	-8.52510893830836	0.515	14:63192525:63194525	0
+Cpne7	positive	down	hypo	DMRs_CG	TSS	-1.68466147605878	-0.1875	8:123116373:123118373	0

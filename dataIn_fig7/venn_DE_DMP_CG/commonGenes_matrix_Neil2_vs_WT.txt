@@ -1,0 +1,2 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+Klhl10	negative	down	hyper	DMP_CG	promoter	-8.31432964955055	29.6679113140381	11:100440808:100442808	0

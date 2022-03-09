@@ -1,0 +1,3 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+Brsk2	positive	down	hypo	DMR_CG_tile	nearby	-2.52183254658945	-29.4488007380074	7:141984001:141985000	0
+Fam214a	positive	down	hypo	DMR_CG_tile	nearby	-1.39833765622629	-30.3695604635906	9:74929001:74930000	-22884

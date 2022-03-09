@@ -1,0 +1,2 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+Pkig	positive	up	hyper	DMR_CCGG_TES	TES	1.40996093145697	0.543199446202	2:163725158:163727158	0

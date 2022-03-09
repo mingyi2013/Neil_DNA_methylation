@@ -1,0 +1,3 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+Scrib	positive	down	hypo	DMR_CCGG_TSS	TSS	-3.44604797977651	-0.733836037975	15:76068730:76070730	0
+Rsrp1	positive	up	hyper	DMR_CCGG_TSS	TSS	1.28251001427286	0.789956230982	4:134922624:134924624	0

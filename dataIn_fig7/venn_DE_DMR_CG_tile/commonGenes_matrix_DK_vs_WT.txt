@@ -1,0 +1,7 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+Gm40518	positive	down	hypo	DMR_CG_tile	nearby	-9.03726164325796	-31.4129726205997	9:48143001:48144000	7431
+Htr3a	positive	down	hypo	DMR_CG_tile	nearby	-1.25410557426171	-31.6129032258065	9:48911001:48912000	0
+Layn	positive	down	hypo	DMR_CG_tile	nearby	-1.69289173912628	-36.8322288704454	9:51082001:51083000	-4908
+Rnf214	positive	down	hypo	DMR_CG_tile	nearby	-2.70349369979896	-31.0923080394413	9:45898001:45899000	0
+Sc5d	positive	down	hypo	DMR_CG_tile	nearby	-2.73561324819092	-25.0067469099153	9:42245001:42246000	18201
+Zbtb16	positive	down	hypo	DMR_CG_tile	nearby	-2.0305846752032	-41.5774517578641	9:48777001:48778000	57946

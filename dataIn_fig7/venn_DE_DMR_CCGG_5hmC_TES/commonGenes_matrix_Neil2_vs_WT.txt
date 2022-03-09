@@ -1,0 +1,4 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+D7Ertd443e	negative	down	hyper	DMR_CCGG_5hmC_TES	TES	-2.41166199224866	0.8972605029433	7:134265261:134267261	0
+Wnt7b	negative	down	hyper	DMR_CCGG_5hmC_TES	TES	-1.3169312631291	1.251470022255	15:85534436:85536436	0
+Sertad3	positive	up	hyper	DMR_CCGG_5hmC_TES	TES	4.30239875137717	0.241904676679	7:27476364:27478364	0

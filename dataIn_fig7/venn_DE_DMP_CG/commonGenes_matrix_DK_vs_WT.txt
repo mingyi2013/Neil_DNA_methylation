@@ -1,0 +1,3 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+Neil1	positive	down	hypo	DMP_CG	promoter	-2.07712681361578	-45.0610407092791	9:57146034:57148034	0
+Rnf214	positive	down	hypo	DMP_CG	promoter	-2.70349369979896	-30.4954984271613	9:45897435:45899435	0

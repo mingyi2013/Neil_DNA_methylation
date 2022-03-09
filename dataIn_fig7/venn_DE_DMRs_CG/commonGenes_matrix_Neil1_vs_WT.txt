@@ -1,0 +1,7 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+9330159F19Rik	negative	down	hyper	DMRs_CG	TSS	-2.93324384077483	0.2725	10:29210642:29212642	0
+Cryab	negative	down	hyper	DMRs_CG	TSS	-1.32564466708175	0.2075	9:50750324:50752324	0
+Hif3a	negative	down	hyper	DMRs_CG	TES	-1.61756058206011	0.275	7:17029992:17031992	0
+Klf7	negative	down	hyper	DMRs_CG	TES	-4.55277927514123	0.1925	1:64034670:64036670	0
+Sec14l5	negative	down	hyper	DMRs_CG	TES	-1.07209626312809	0.185	16:5182934:5184934	0
+Wnt7b	negative	up	hypo	DMRs_CG	TSS	1.4529763850581	-0.2225	15:85579729:85581729	0

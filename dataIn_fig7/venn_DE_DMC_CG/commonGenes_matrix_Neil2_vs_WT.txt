@@ -1,0 +1,4 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+Shc3	negative	down	hyper	DMC_CG	nearby	-6.7034441914033	73.7704918032787	13:51605480:51605480	-36062
+Arhgap15	positive	down	hypo	DMC_CG	nearby	-3.05119085785767	-41.6038989809482	2:43928714:43928714	-136327
+Fam214a	positive	down	hypo	DMC_CG	nearby	-1.39833765622629	-52.1941489361702	9:74985333:74985333	9224

@@ -1,0 +1,5 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+3110039I08Rik	negative	down	hyper	DMRs_CG	gene	-1.611823316909	0.1975	9:41377560:41431079	0
+Neil2	negative	down	hyper	DMRs_CG	TSS	-8.55569294156162	0.38	14:63192525:63194525	0
+Rabep1	negative	down	hyper	DMRs_CG	gene	-1.25939319397802	0.1775	11:70845760:70942105	0
+Neil1	positive	down	hypo	DMRs_CG	TSS	-2.07712681361578	-0.2975	9:57146034:57148034	0

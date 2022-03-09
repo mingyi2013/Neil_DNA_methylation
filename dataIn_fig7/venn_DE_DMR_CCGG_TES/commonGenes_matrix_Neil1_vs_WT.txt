@@ -1,0 +1,2 @@
+gene_name	correlation	DE_type	mC_type	catalog	feature	DE_dif	mC_dif	location	distance_to_gene
+Fbxl19	negative	down	hyper	DMR_CCGG_TES	TES	-1.67660621547741	0.356024049416	7:127767928:127769928	0
