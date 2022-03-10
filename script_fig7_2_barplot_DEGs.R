@@ -55,7 +55,7 @@ fig <- ggplot(data, aes(V2, V1)) +
 fig   
 # save plot 
 File = paste(out, "/plot_bar_DE_gene_count.jpg", sep="")
-ggsave(filename = File, plot = fig_enrichment, 
+ggsave(filename = File, plot = fig, 
        width = 4, 
        height = 6, 
        dpi = 300, 
@@ -80,7 +80,7 @@ data <- de3
 # save plot 
   print(fig)
   File = paste(out, "/plot_bar_DE_genes_count_by_up_down.jpg", sep="")
-  ggsave(filename = File, plot = fig_enrichment, 
+  ggsave(filename = File, plot = fig, 
        width = 6, 
        height = 6, 
        dpi = 300, 
